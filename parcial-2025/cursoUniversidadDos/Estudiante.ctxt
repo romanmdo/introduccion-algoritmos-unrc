@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Estudiante
+comment0.text=\n\ Representa\ un\ estudiante\ de\ una\ materia\ en\ una\ carrera\ universitaria.\n\ Los\ detalles\ del\ estudiante\ son\ su\ nombre,\ apellido,\ id,\n\ e\ indicando\ si\ es\ ingresante\ o\ no.\n\n
+comment1.params=nombre\ apellido\ id\ esRegular
+comment1.target=Estudiante(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment1.text=\n\ Crea\ un\ nuevo\ estudiante\ con\ todos\ sus\ datos.\n\n\ @param\ nombre\ \ \ \ \ \ \ el\ nombre\ del\ estudiante\ (no\ puede\ ser\ null\ ni\ vac\u00EDo)\n\ @param\ apellido\ \ \ \ \ el\ apellido\ del\ estudiante\ (no\ puede\ ser\ null\ ni\ vac\u00EDo)\n\ @param\ id\ \ \ \ \ \ \ \ \ \ \ el\ ID\ del\ estudiante\ (debe\ ser\ positivo)\n\ @param\ esRegular\ indica\ si\ el\ estudiante\ es\ regular\n\ @throws\ IllegalArgumentException\ si\ alguno\ de\ los\ par\u00E1metros\ no\ cumple\ con\ las\ validaciones\n
+comment2.params=
+comment2.target=java.lang.String\ obtenerApellido()
+comment2.text=\n\ Obtiene\ el\ apellido\ del\ estudiante\n\n\ @return\ el\ apellido\ del\ estudiante\n
+comment3.params=
+comment3.target=java.lang.String\ obtenerNombre()
+comment3.text=\n\ Obtiene\ el\ nombre\ del\ estudiante\n\n\ @return\ el\ nombre\ del\ estudiante\n
+comment4.params=
+comment4.target=int\ obtenerId()
+comment4.text=\n\ Obtiene\ el\ ID\ del\ estudiante\n\n\ @return\ el\ ID\ del\ estudiante\n
+comment5.params=
+comment5.target=boolean\ esRegular()
+comment5.text=\n\ Verifica\ si\ el\ estudiante\ es\ regular\n\n\ @return\ true\ si\ es\ regular,\ false\ en\ caso\ contrario\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ Retorna\ los\ detalles\ del\ estudiante,\ como\ cadena\ de\ caracteres.\n\n\ @return\ detalles\ del\ estudiante\ en\ una\ cadena\ de\ caracteres,\n\ usando\ el\ formato\ "<id>\:\ <apellido>,\ <nombre>",\ si\ el\ estudiante\ es\ regular,\ o\n\ \ "<id>\:\ <apellido>,\ <nombre>\ (aspirante)",\ si\ el\ estudiante\ no\ es\ regular.\n
+numComments=7

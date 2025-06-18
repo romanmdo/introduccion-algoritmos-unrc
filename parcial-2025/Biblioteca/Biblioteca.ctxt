@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Biblioteca
+comment0.text=\r\n\ Representa\ una\ biblioteca\ (repositorio\ de\ material\ bibliogr\u00E1fico)\ organizado\r\n\ en\ estantes\ por\ a\u00F1os\ (siglos).\r\n
+comment1.params=nombre
+comment1.target=Biblioteca(java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Biblioteca.\ Crea\ una\ nueva\ biblioteca\ con\ su\ nombre,\ y\ listas\r\n\ vac\u00EDas\ de\ libros\ para\ los\ respectivos\ estantes\r\n
+comment2.params=libro
+comment2.target=void\ agregarLibro(Libro)
+comment2.text=\r\n\ Agrega\ un\ nuevo\ libro\ a\ la\ biblioteca.\r\n\ @param\ libro\ es\ el\ libro\ a\ agregar.\r\n\ Precondici\u00F3n\:\ el\ libro\ no\ debe\ ser\ null,\ ni\ deben\ existir\ libros\ con\ el\ mismo\ t\u00EDtulo\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ en\ la\ biblioteca.\ El\ libro\ debe\ tener\ a\u00F1o\ de\ edici\u00F3n\ mayor\ o\ igual\ a\ 1900.\r\n\ Postcondici\u00F3n\:\ se\ agrega\ el\ libro\ a\ la\ biblioteca,\ a\ la\ lista\ de\ libros\ correspondiente,\ de\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ acuerdo\ a\ si\ el\ libro\ es\ novela\ o\ no.\ \r\n
+comment3.params=titulo
+comment3.target=boolean\ comprobarTitulo(java.lang.String)
+comment4.params=autor
+comment4.target=java.util.HashSet\ obtenerTitulosLibrosAutor(java.lang.String)
+comment4.text=\r\n\ Retorna\ el\ conjunto\ de\ t\u00EDtulos\ de\ libros\ de\ un\ autor\ determinado\ \r\n\ @param\ autor\ es\ el\ autor\ para\ el\ cual\ se\ deben\ encontrar\ los\ libros\ en\ la\ biblioteca.\r\n\ @return\ el\ conjunto\ de\ todos\ los\ t\u00EDtulos\ de\ libros\ en\ la\ biblioteca,\ cuyo\ autor\ es\ el\ dado.\r\n\ Precondici\u00F3n\:\ autor\ no\ puede\ ser\ null\r\n
+comment5.params=
+comment5.target=boolean\ repOK()
+comment5.text=\r\n\ Chequea\ si\ el\ objeto\ es\ internamente\ consistente.\ Lo\ es\ si\:\r\n\ -\ Las\ listas\ de\ libros\ no\ contienen\ libros\ con\ t\u00EDtulo\ repetido\r\n\ -\ las\ listas\ de\ libros\ no\ contienen\ libros\ en\ com\u00FAn\ (libros\ con\ el\ mismo\ t\u00EDtulo\ en\ las\ dos\ listas)\r\n\ -\ cada\ libro\ de\ cada\ una\ de\ las\ listas\ cumple\ con\ la\ restricci\u00F3n\ requerida\ del\ a\u00F1o\ de\ edici\u00F3n\ (sigloVeinte\ contiene\ libros\ del\ siglo\ veinte,\r\n\ sigloVeintiuno\ contiene\ libros\ del\ siglo\ veintiuno).\r\n
+numComments=6

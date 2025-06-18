@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Servidor
+comment1.params=
+comment1.target=Servidor()
+comment2.params=j
+comment2.target=void\ agregarJugador(Jugador)
+comment3.params=
+comment3.target=int\ cantidadJugadores()
+comment4.params=
+comment4.target=java.util.ArrayList\ obtenerJugadoresConectados()
+comment5.params=
+comment5.target=java.util.ArrayList\ nombresJugadoresEnLinea()
+comment6.params=
+comment6.target=void\ desconectarJugadoresInactivos()
+comment7.params=nivel
+comment7.target=int\ contarJugadoresPorNivel(int)
+numComments=8

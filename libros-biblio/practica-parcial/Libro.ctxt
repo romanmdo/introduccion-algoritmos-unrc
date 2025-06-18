@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Libro
+comment0.text=\r\n\ Clase\ Libro\:\ representa\ un\ libro\ de\ una\ biblioteca\ personal.\r\n
+comment1.params=titulo\ autor\ id\ estaPrestado
+comment1.target=Libro(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getTitulo()
+comment2.text=\r\n\ Retorna\ el\ autor\ del\ libro\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAutor()
+comment4.params=
+comment4.target=int\ getId()
+comment5.params=nuevoTitulo
+comment5.target=void\ cambiarTitulo(java.lang.String)
+numComments=6

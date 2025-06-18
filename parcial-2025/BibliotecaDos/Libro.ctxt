@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Libro
+comment0.text=\n\ Representa\ un\ libro,\ con\ su\ informaci\u00F3n\ b\u00E1sica.\n\n
+comment1.params=titulo\ autor\ anho\ esNovela
+comment1.target=Libro(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment1.text=\n\ Crea\ un\ nuevo\ libro\ con\ todos\ sus\ datos.\n\ @param\ titulo\ es\ el\ t\u00EDtulo\ del\ libro\n\ @param\ autor\ es\ el\ nombre\ del\ autor\ (cadena\ vac\u00EDa\ si\ el\ autor\ es\ desconocido)\n\ @param\ anho\ es\ el\ a\u00F1o\ de\ edici\u00F3n\ del\ libro\ \n\ @param\ esNovela\ indica\ si\ el\ libro\ es\ una\ novela\n\ Precondici\u00F3n\:\ el\ t\u00EDtulo\ no\ puede\ ser\ null\ ni\ vac\u00EDo.\n\ Precondici\u00F3n\:\ el\ autor\ no\ puede\ ser\ null.\n
+comment2.params=
+comment2.target=java.lang.String\ obtenerTitulo()
+comment2.text=\n\ Retorna\ el\ t\u00EDtulo\ del\ libro.\n\ @return\ el\ t\u00EDtulo\ del\ libro\n
+comment3.params=
+comment3.target=int\ obtenerAnho()
+comment3.text=\n\ Retorna\ el\ a\u00F1o\ de\ edici\u00F3n\ del\ libro\n\ @return\ a\u00F1o\ de\ edici\u00F3n\ del\ libro\n
+comment4.params=
+comment4.target=java.lang.String\ obtenerAutor()
+comment4.text=\n\ Retorna\ el\ autor\ del\ libro.\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Retorna\ los\ detalles\ del\ libro,\ como\ cadena\ de\ caracteres.\n\n\ @return\ detalles\ del\ libro\ en\ una\ cadena\ de\ caracteres,\n\ usando\ el\ formato\ "<titulo>\ (a\u00F1o\ <anho>).\ Novela\ de\ <autor>.",\ si\ el\ libro\ es\ una\ novela,\ o\n\ \ "<titulo>\ (a\u00F1o\ <anho>).\ Libro\ de\ <autor>.",\ si\ el\ libro\ no\ es\ una\ novela.\n
+numComments=6

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Biblioteca
+comment0.text=\r\n\ Representa\ una\ biblioteca\ personal\ (colecci\u00F3n\ de\ libros).\r\n\ Se\ asume\ que\ la\ persona\ organiza\ su\ biblioteca\ en\ estanter\u00EDas.\r\n
+comment1.params=nombreEstanteria
+comment1.target=Biblioteca(java.lang.String)
+comment2.params=libro
+comment2.target=void\ agregarLibro(Libro)
+comment3.params=autor
+comment3.target=int\ cantidadAutor(java.lang.String)
+comment4.params=id\ nuevoTitulo
+comment4.target=void\ cambiarTitulo(int,\ java.lang.String)
+comment5.params=autor
+comment5.target=void\ eliminarAutor(java.lang.String)
+numComments=6
