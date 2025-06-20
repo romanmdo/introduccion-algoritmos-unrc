@@ -40,7 +40,36 @@ public class Fonoteca
      *              acuerdo a si el album es en vivo o no. 
      */
     public void agregarAlbum(Album album) {
-        //TODO Implementar este método
+        assert album != null;
+        assert !buscarAlbum(album.obtenerTitulo());
+        
+        if(album.esEnVivo() == true)
+        {
+            albumesEnVivo.add(album);
+        } else {
+            albumesDeEstudio.add(album);
+        }
+    }
+    
+    public boolean buscarAlbum(String album)
+    {
+        for(Album a: albumesDeEstudio)
+        {
+            if(a.obtenerTitulo().equalsIgnoreCase(album))
+            {
+                return true;
+            }
+        }
+        
+        for(Album a: albumesEnVivo)
+        {
+            if(a.obtenerTitulo().equalsIgnoreCase(album))
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
  
     /**
@@ -50,8 +79,27 @@ public class Fonoteca
      * Precondición: anho debe ser mayor o igual a 1900.
      */
     public HashSet<String> obtenerTitulosAlbumesAnho(int anho) {
-        //TODO Implementar este método
-        return null;
+        assert anho >= 1900;
+        
+        HashSet<String> titulos = new HashSet<>();
+        
+        for(Album a: albumesDeEstudio)
+        {
+            if(a.obtenerAnho() == anho)
+            {
+                titulos.add(a.obtenerTitulo());
+            }
+        }
+        
+        for(Album a: albumesEnVivo)
+        {
+            if(a.obtenerAnho() == anho)
+            {
+                titulos.add(a.obtenerTitulo());
+            }
+        }
+          
+        return titulos;
     }
 
     /**
@@ -62,9 +110,28 @@ public class Fonoteca
      * - la lista de albumes de estudio solo contiene albumes de estudio (no albumes en vivo)
      */
     public boolean repOK() {
-        //TODO Implementar este metodo
+        if (nombre == null || nombre.trim().isEmpty()) { return false; }
+        return true;
+    }
+    
+    public boolean buscarAlbum(String album)
+    {
+        for(Album a: albumesDeEstudio)
+        {
+            if(a.obtenerTitulo().equalsIgnoreCase(album))
+            {
+                return true;
+            }
+        }
+        
+        for(Album a: albumesEnVivo)
+        {
+            if(a.obtenerTitulo().equalsIgnoreCase(album))
+            {
+                return true;
+            }
+        }
+        
         return false;
     }
-
-
 }

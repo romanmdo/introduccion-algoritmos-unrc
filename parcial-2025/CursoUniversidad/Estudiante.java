@@ -30,7 +30,21 @@ public class Estudiante {
      * @throws IllegalArgumentException si alguno de los parámetros no cumple con las validaciones
      */
     public Estudiante(String nombre, String apellido, int id, boolean esIngresante) {
-        //TODO Implementar este método
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre no puede ser null ni vacío");
+        }
+        if (apellido == null || apellido.trim().isEmpty()) {
+            throw new IllegalArgumentException("El apellido no puede ser null ni vacío");
+        }
+
+        if(id < 0){
+            throw new IllegalArgumentException("El id no puede ser negativo");
+        }
+        
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.id = id;
+        this.esIngresante = esIngresante;
     }
 
     /**
@@ -101,8 +115,16 @@ public class Estudiante {
      *  "<id>: <apellido>, <nombre> (ingresante)", si el estudiante es ingresante.
      */
     public String toString() {
-        //TODO Implementar este método
-        return null;
+        String cadena = "";
+        
+        if(this.esIngresante == true)
+        {
+            cadena = id + ": " + apellido + ", " + nombre + " (ingresante)";
+            return cadena;
+        } else {
+            cadena = id + ": " + apellido + ", " + nombre;
+            return cadena;
+        }
     }
 
 }

@@ -45,7 +45,36 @@ public class Curso
      * Precondición: la comisión debe ser 1 o 2.
      */
     public void inscribirEstudiante(Estudiante estudiante, int comision) {
-        //TODO Implementar este método
+        assert estudiante != null;
+        assert !estudianteExistente(estudiante.obtenerId());
+        
+        if(comision == 1)
+        {
+            comision1.add(estudiante);
+        } else {
+            comision2.add(estudiante);
+        }
+    }
+    
+    public boolean estudianteExistente(int id)
+    {
+        for(Estudiante e: comision1)
+        {
+            if(e.obtenerId() == id)
+            {
+                return true;
+            }
+        }
+        
+        for(Estudiante e: comision2)
+        {
+            if(e.obtenerId() == id)
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 
     /**
@@ -55,8 +84,29 @@ public class Curso
      * Precondición: comisión debe ser 1 o 2.
      */
     public HashSet<Integer> obtenerIdsIngresantes(int comision) {
-        //TODO Implementar este método 
-        return null;
+        HashSet<Integer> ids = new HashSet<>();
+        
+        if(comision == 1)
+        {
+            for(Estudiante e: comision1)
+            {
+                ids.add(e.obtenerId());
+            }
+            
+            return ids;
+        }
+        
+        if(comision == 2)
+        {
+            for(Estudiante e: comision1)
+            {
+                ids.add(e.obtenerId());
+            }
+            
+            return ids;
+        }
+        
+        return ids;
     }
 
     /**
@@ -67,9 +117,10 @@ public class Curso
      * - las listas de las comisiones no tienen alumnos con ids repetidos
      * - las listas de las comisiones no contienen objetos nulos
      */
-     public boolean repOK() {
-        //TODO Implementar este método 
-        return false;
-     }
-    
+    public boolean repOK() {
+        if (nombre == null || nombre.trim().isEmpty()) { return false; }
+        
+        
+        return true;
+    }
 }

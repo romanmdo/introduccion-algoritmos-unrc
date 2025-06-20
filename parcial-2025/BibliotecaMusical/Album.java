@@ -27,7 +27,10 @@ public class Album {
      * 
      */
     public Album(String titulo, String artista, int anho, boolean enVivo) {
-        //TODO Implementar este método
+        this.titulo = titulo;
+        this.artista = artista;
+        this.anho = anho;
+        this.enVivo = enVivo;
     }
 
     /**
@@ -69,8 +72,16 @@ public class Album {
      *  "<titulo> (año <anho>). Artista: <artista>. Album en vivo", si el album es en vivo.
      */
     public String toString() {
-        //TODO Implementar este método
-        return null;
+        String cadena = "";
+        
+        if(enVivo == true)
+        {
+            cadena = titulo + " (año " + anho + "). Artista: " + artista + ". Album en vivo";
+            return cadena;
+        } else {
+            cadena = titulo + " (año " + anho + "). Artista: " + artista;
+            return cadena;
+        }
     }
 
 }

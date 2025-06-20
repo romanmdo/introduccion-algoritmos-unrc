@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Album
+comment0.text=\r\n\ Representa\ un\ album\ de\ m\u00FAsica,\ con\ su\ informaci\u00F3n\ b\u00E1sica.\r\n\r\n
+comment1.params=titulo\ artista\ anho\ enVivo
+comment1.target=Album(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment1.text=\r\n\ Crea\ un\ nuevo\ album\ con\ todos\ sus\ datos.\r\n\ @param\ titulo\ es\ el\ t\u00EDtulo\ del\ album\r\n\ @param\ artista\ es\ el\ nombre\ del\ artista\r\n\ @param\ anho\ es\ el\ a\u00F1o\ de\ edici\u00F3n\ del\ album\ (el\ a\u00F1o\ debe\ ser\ mayor\ o\ igual\ a\ 1900)\r\n\ @param\ enVivo\ indica\ si\ el\ album\ es\ en\ vivo\r\n\ \r\n
+comment2.params=
+comment2.target=java.lang.String\ obtenerTitulo()
+comment2.text=\r\n\ Obtiene\ el\ t\u00EDtulo\ del\ album.\r\n
+comment3.params=
+comment3.target=java.lang.String\ obtenerArtista()
+comment3.text=\r\n\ Obtiene\ el\ artista\ del\ album.\r\n\ @return\ el\ artista\ del\ album\r\n
+comment4.params=
+comment4.target=boolean\ esEnVivo()
+comment4.text=\r\n\ Es\ este\ album\ en\ vivo?\r\n\ @return\ true\ si\ el\ album\ es\ en\ vivo,\ false\ en\ caso\ contrario\r\n
+comment5.params=
+comment5.target=int\ obtenerAnho()
+comment5.text=\r\n\ Obtiene\ a\u00F1o\ de\ edici\u00F3n\ del\ album.\r\n\ @return\ a\u00F1o\ de\ edici\u00F3n\ del\ album\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Retorna\ los\ detalles\ del\ album,\ como\ cadena\ de\ caracteres.\r\n\r\n\ @return\ detalles\ del\ album\ en\ una\ cadena\ de\ caracteres,\r\n\ usando\ el\ formato\ "<titulo>\ (a\u00F1o\ <anho>).\ Artista\:\ <artista>",\ si\ el\ album\ no\ es\ en\ vivo,\ o\r\n\ \ "<titulo>\ (a\u00F1o\ <anho>).\ Artista\:\ <artista>.\ Album\ en\ vivo",\ si\ el\ album\ es\ en\ vivo.\r\n
+numComments=7
